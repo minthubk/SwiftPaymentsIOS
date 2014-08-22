@@ -1,0 +1,1 @@
+../../LevelUpSDK/Source/API/Models/LULoyalty.h

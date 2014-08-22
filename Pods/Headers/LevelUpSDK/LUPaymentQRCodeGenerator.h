@@ -1,0 +1,1 @@
+../../LevelUpSDK/Source/QRCode-Management/LUPaymentQRCodeGenerator.h
