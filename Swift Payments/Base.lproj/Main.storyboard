@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6205" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment defaultVersion="1792" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6198"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
         <!--First-->
@@ -21,46 +21,20 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <items/>
                             </toolbar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NWx-fy-B1U">
-                                <rect key="frame" x="166" y="125" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="400" id="OqN-nR-uV4"/>
-                                    <constraint firstAttribute="height" constant="400" id="zmH-89-j4C"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="OqN-nR-uV4"/>
-                                        <exclude reference="zmH-89-j4C"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="OqN-nR-uV4"/>
-                                        <include reference="zmH-89-j4C"/>
-                                    </mask>
-                                </variation>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NWx-fy-B1U">
+                                <rect key="frame" x="20" y="64" width="560" height="467"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="iQr-d4-Ar2" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="8qp-4k-ywN"/>
                             <constraint firstItem="iQr-d4-Ar2" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="9hT-Pl-9vo"/>
+                            <constraint firstItem="NWx-fy-B1U" firstAttribute="top" secondItem="iQr-d4-Ar2" secondAttribute="bottom" constant="20" id="Flc-fH-4WM"/>
                             <constraint firstItem="iQr-d4-Ar2" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailing" id="GCv-eZ-Lr1"/>
-                            <constraint firstItem="NWx-fy-B1U" firstAttribute="top" secondItem="iQr-d4-Ar2" secondAttribute="bottom" constant="40" id="nxC-b5-CYS"/>
-                            <constraint firstAttribute="centerX" secondItem="NWx-fy-B1U" secondAttribute="centerX" id="tfd-Lw-Uhb"/>
+                            <constraint firstItem="NWx-fy-B1U" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailing" constant="-20" id="joQ-We-sXQ"/>
+                            <constraint firstItem="NWx-fy-B1U" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="20" id="u6n-eZ-sbq"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="NWx-fy-B1U" secondAttribute="bottom" constant="20" id="y1L-CO-guV"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="nxC-b5-CYS"/>
-                                <exclude reference="tfd-Lw-Uhb"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="constraints">
-                                <include reference="nxC-b5-CYS"/>
-                                <include reference="tfd-Lw-Uhb"/>
-                            </mask>
-                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                     <connections>
@@ -69,12 +43,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-293.25"/>
+            <point key="canvasLocation" x="750" y="-294"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Swift_Payments" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
@@ -239,16 +212,16 @@
                                 <exclude reference="XGB-MG-Uh1"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="PJn-xk-4xE"/>
-                                <exclude reference="z4e-0E-Hln"/>
-                                <exclude reference="WyB-xd-LhL"/>
-                                <exclude reference="rfi-vu-fdm"/>
                                 <exclude reference="6i2-hm-Te5"/>
                                 <exclude reference="zGF-2q-hiA"/>
+                                <exclude reference="ttG-js-S86"/>
+                                <exclude reference="WyB-xd-LhL"/>
+                                <exclude reference="rfi-vu-fdm"/>
+                                <exclude reference="PJn-xk-4xE"/>
+                                <exclude reference="z4e-0E-Hln"/>
+                                <exclude reference="4I9-nI-T0Q"/>
                                 <exclude reference="AvA-TV-JBZ"/>
                                 <exclude reference="ffd-2Y-UTn"/>
-                                <exclude reference="4I9-nI-T0Q"/>
-                                <exclude reference="ttG-js-S86"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -260,28 +233,29 @@
                                 <include reference="XGB-MG-Uh1"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="PJn-xk-4xE"/>
-                                <include reference="z4e-0E-Hln"/>
-                                <include reference="WyB-xd-LhL"/>
-                                <include reference="rfi-vu-fdm"/>
                                 <include reference="6i2-hm-Te5"/>
                                 <include reference="zGF-2q-hiA"/>
+                                <include reference="ttG-js-S86"/>
+                                <include reference="WyB-xd-LhL"/>
+                                <include reference="rfi-vu-fdm"/>
+                                <include reference="PJn-xk-4xE"/>
+                                <include reference="z4e-0E-Hln"/>
+                                <include reference="4I9-nI-T0Q"/>
                                 <include reference="AvA-TV-JBZ"/>
                                 <include reference="ffd-2Y-UTn"/>
-                                <include reference="4I9-nI-T0Q"/>
-                                <include reference="ttG-js-S86"/>
                             </mask>
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
                     <connections>
-                        <outlet property="SpendToGo" destination="XGB-MG-Uh1" id="k95-CW-YYY"/>
                         <outlet property="availableCredit" destination="jEy-Lo-nrn" id="yKG-Uc-TCY"/>
                         <outlet property="earnY" destination="oQr-z0-c7M" id="T2V-f7-Op5"/>
                         <outlet property="progressBar" destination="LeH-3q-Pnf" id="TDC-6v-jC2"/>
+                        <outlet property="spendToGo" destination="XGB-MG-Uh1" id="hs7-g7-2dI"/>
                         <outlet property="spendX" destination="2iN-Nc-enZ" id="Pdb-bf-Lxd"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="292.5"/>
         </scene>

@@ -13,22 +13,11 @@
 		0FB72E9819A67D63000922D3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB72E9719A67D63000922D3 /* SecondViewController.swift */; };
 		0FB72E9B19A67D63000922D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FB72E9919A67D63000922D3 /* Main.storyboard */; };
 		0FB72E9D19A67D63000922D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FB72E9C19A67D63000922D3 /* Images.xcassets */; };
-		0FB72EA919A67D63000922D3 /* Swift_PaymentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB72EA819A67D63000922D3 /* Swift_PaymentsTests.swift */; };
 		0FB72EBE19A67F6D000922D3 /* LoggedOutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FB72EBA19A67F6D000922D3 /* LoggedOutView.xib */; };
 		0FB72EBF19A67F6D000922D3 /* LoggedOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB72EBB19A67F6D000922D3 /* LoggedOutViewController.swift */; };
 		0FB72EC019A67F6D000922D3 /* PrivateConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB72EBC19A67F6D000922D3 /* PrivateConstants.swift */; };
 		AECC25D699EB4972A73925C6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1935BC8AE740E6933CCFF2 /* libPods.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		0FB72EA319A67D63000922D3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0FB72E8619A67D63000922D3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0FB72E8D19A67D63000922D3;
-			remoteInfo = "Swift Payments";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0FB35DA519A76F2F00CDA6F4 /* AuthenticationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationHandler.swift; sourceTree = "<group>"; };
@@ -39,9 +28,6 @@
 		0FB72E9719A67D63000922D3 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		0FB72E9A19A67D63000922D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0FB72E9C19A67D63000922D3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		0FB72EA219A67D63000922D3 /* Swift PaymentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift PaymentsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0FB72EA719A67D63000922D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0FB72EA819A67D63000922D3 /* Swift_PaymentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_PaymentsTests.swift; sourceTree = "<group>"; };
 		0FB72EBA19A67F6D000922D3 /* LoggedOutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoggedOutView.xib; sourceTree = "<group>"; };
 		0FB72EBB19A67F6D000922D3 /* LoggedOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedOutViewController.swift; sourceTree = "<group>"; };
 		0FB72EBC19A67F6D000922D3 /* PrivateConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivateConstants.swift; sourceTree = "<group>"; };
@@ -59,13 +45,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0FB72E9F19A67D63000922D3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -73,7 +52,6 @@
 			isa = PBXGroup;
 			children = (
 				0FB72E9019A67D63000922D3 /* Swift Payments */,
-				0FB72EA519A67D63000922D3 /* Swift PaymentsTests */,
 				0FB72E8F19A67D63000922D3 /* Products */,
 				EF9B3354A5634BF799142427 /* Pods.xcconfig */,
 				7A7702AA79184EA4A2E20FA3 /* Frameworks */,
@@ -84,7 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				0FB72E8E19A67D63000922D3 /* Swift Payments.app */,
-				0FB72EA219A67D63000922D3 /* Swift PaymentsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,23 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				0FB72E9219A67D63000922D3 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		0FB72EA519A67D63000922D3 /* Swift PaymentsTests */ = {
-			isa = PBXGroup;
-			children = (
-				0FB72EA819A67D63000922D3 /* Swift_PaymentsTests.swift */,
-				0FB72EA619A67D63000922D3 /* Supporting Files */,
-			);
-			path = "Swift PaymentsTests";
-			sourceTree = "<group>";
-		};
-		0FB72EA619A67D63000922D3 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				0FB72EA719A67D63000922D3 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -170,24 +130,6 @@
 			productReference = 0FB72E8E19A67D63000922D3 /* Swift Payments.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0FB72EA119A67D63000922D3 /* Swift PaymentsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0FB72EAF19A67D63000922D3 /* Build configuration list for PBXNativeTarget "Swift PaymentsTests" */;
-			buildPhases = (
-				0FB72E9E19A67D63000922D3 /* Sources */,
-				0FB72E9F19A67D63000922D3 /* Frameworks */,
-				0FB72EA019A67D63000922D3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0FB72EA419A67D63000922D3 /* PBXTargetDependency */,
-			);
-			name = "Swift PaymentsTests";
-			productName = "Swift PaymentsTests";
-			productReference = 0FB72EA219A67D63000922D3 /* Swift PaymentsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -199,10 +141,6 @@
 				TargetAttributes = {
 					0FB72E8D19A67D63000922D3 = {
 						CreatedOnToolsVersion = 6.0;
-					};
-					0FB72EA119A67D63000922D3 = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = 0FB72E8D19A67D63000922D3;
 					};
 				};
 			};
@@ -220,7 +158,6 @@
 			projectRoot = "";
 			targets = (
 				0FB72E8D19A67D63000922D3 /* Swift Payments */,
-				0FB72EA119A67D63000922D3 /* Swift PaymentsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,13 +170,6 @@
 				0FB72E9B19A67D63000922D3 /* Main.storyboard in Resources */,
 				0FB72EBE19A67F6D000922D3 /* LoggedOutView.xib in Resources */,
 				0FB72E9D19A67D63000922D3 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0FB72EA019A67D63000922D3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,23 +222,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0FB72E9E19A67D63000922D3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0FB72EA919A67D63000922D3 /* Swift_PaymentsTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		0FB72EA419A67D63000922D3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0FB72E8D19A67D63000922D3 /* Swift Payments */;
-			targetProxy = 0FB72EA319A67D63000922D3 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0FB72E9919A67D63000922D3 /* Main.storyboard */ = {
@@ -360,6 +274,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "LevelUpSDK-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -395,6 +310,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "LevelUpSDK-Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -409,7 +325,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/danielschlitt/Desktop/Swift Payments/Swift Payments/SwiftPayment-BridgingHeader.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift Payments/SwiftPayment-BridgingHeader.h";
 			};
 			name = Debug;
 		};
@@ -423,41 +339,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/danielschlitt/Desktop/Swift Payments/Swift Payments/SwiftPayment-BridgingHeader.h";
-			};
-			name = Release;
-		};
-		0FB72EB019A67D63000922D3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Swift PaymentsTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift Payments.app/Swift Payments";
-			};
-			name = Debug;
-		};
-		0FB72EB119A67D63000922D3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Swift PaymentsTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift Payments.app/Swift Payments";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift Payments/SwiftPayment-BridgingHeader.h";
 			};
 			name = Release;
 		};
@@ -478,15 +360,6 @@
 			buildConfigurations = (
 				0FB72EAD19A67D63000922D3 /* Debug */,
 				0FB72EAE19A67D63000922D3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0FB72EAF19A67D63000922D3 /* Build configuration list for PBXNativeTarget "Swift PaymentsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0FB72EB019A67D63000922D3 /* Debug */,
-				0FB72EB119A67D63000922D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

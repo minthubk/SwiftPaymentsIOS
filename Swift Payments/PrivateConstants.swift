@@ -16,8 +16,6 @@
 
 import Foundation
 
-let LevelUpAPPID = ""
-let LeveLUpAPIKey = ""
+let LevelUpAppID = ""
+let LevelUpAPIKey = ""
 let MerchantID =  0
-
-

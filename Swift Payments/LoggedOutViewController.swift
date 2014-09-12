@@ -17,64 +17,46 @@
 import Foundation
 
 class LoggedOutViewController: UIViewController {
-
-  required init(coder aDecoder: NSCoder!) {
+  required init(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
   }
-  
-  override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {
+
+  override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
     super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-    
+
     let failedNotification = NSNotificationCenter.defaultCenter()
-    
-    failedNotification.addObserver( self,
+
+    failedNotification.addObserver(self,
       selector: "deepLinkAuthFailed:",
       name: LUDeepLinkAuthErrorNotification,
       object: nil)
-    
+
     let succeededNotification = NSNotificationCenter.defaultCenter()
-    
+
     succeededNotification.addObserver(self,
       selector: "deepLinkAuthSucceeded:",
       name: LUDeepLinkAuthSuccessNotification,
       object: nil)
-
-  }
-  
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
-    
-  }
-  
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-    NSNotificationCenter.defaultCenter().removeObserver(self)
   }
 
-  
-  
-  
-  @IBAction func DeepLinkAuth(sender: UIButton) {
+  @IBAction func deepLinkAuth(sender: UIButton) {
     LUDeepLinkAuth.authorizeWithPermissions(["read_user_basic_info", "read_qr_code", "manage_user_campaigns"], returnURLScheme: "com.thelevelup.Swift-Payments")
   }
-  
-  func deepLinkAuthFailed(notification: NSNotification){
 
-    let error = notification.userInfo[LUDeepLinkAuthNotificationErrorKey]! as NSError
-    
+  func deepLinkAuthFailed(notification: NSNotification) {
+    let error = notification.userInfo![LUDeepLinkAuthNotificationErrorKey]! as NSError
+
     UIAlertView(title: "Deep Link Auth Error",
       message: error.localizedDescription,
       delegate: nil,
       cancelButtonTitle: "OK").show()
   }
-  
-  func deepLinkAuthSucceeded(notification: NSNotification){
-    let accessToken = notification.userInfo[LUDeepLinkAuthNotificationAccessTokenKey]! as String
+
+  func deepLinkAuthSucceeded(notification: NSNotification) {
+    let accessToken = notification.userInfo![LUDeepLinkAuthNotificationAccessTokenKey]! as String
     LUAPIClient.sharedClient().accessToken = accessToken
-    
+
     let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
     appDelegate.updateRootViewController()
-    }
+  }
 }

@@ -17,41 +17,29 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-                            
   @IBOutlet weak var QRImageView: UIImageView!
   var paymentToken: LUPaymentToken?
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
-    
-    
+
     let request: LUAPIRequest = LUPaymentTokenRequestFactory.requestForPaymentToken()
     LUAPIClient.sharedClient().performRequest(request,
-      success: {token, response in
+      success: { token, response in
         self.paymentToken = token as? LUPaymentToken
         self.refreshQRCode()
       },
-      failure: {error in
+      failure: { error in
         println("There was an error getting the Payment Token")
         println(error)
-        //UIAlerView
     })
-
   }
 
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-
-  
-  func refreshQRCode(){
-    if paymentToken!.data.isEmpty{
+  func refreshQRCode() {
+    if paymentToken!.data.isEmpty {
       return
     }
-    QRImageView!.image = LUPaymentQRCodeGenerator.QRCodeFromPaymentToken(paymentToken!.data)
-    
-    }
-}
 
+    QRImageView!.image = LUPaymentQRCodeGenerator.QRCodeFromPaymentToken(paymentToken!.data)
+  }
+}

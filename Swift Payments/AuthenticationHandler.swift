@@ -16,10 +16,8 @@
 
 import Foundation
 
-
-class AuthenticationHandler{
+class AuthenticationHandler {
    class func isUserAuthenticated() -> Bool {
     return LUAPIClient.sharedClient().accessToken != nil
   }
 }
-
