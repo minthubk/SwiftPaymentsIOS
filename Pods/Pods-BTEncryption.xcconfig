@@ -1,1 +1,0 @@
-PODS_BTENCRYPTION_OTHER_LDFLAGS = -framework Foundation -framework Security -framework UIKit

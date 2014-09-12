@@ -36,7 +36,7 @@ PODS:
     - ZXingObjC/Core
 
 DEPENDENCIES:
-  - LevelUpSDK
+  - LevelUpSDK (= 1.5.4)
 
 SPEC CHECKSUMS:
   AFNetworking: 6d7b76aa5d04c8c37daad3eef4b7e3f2a7620da3

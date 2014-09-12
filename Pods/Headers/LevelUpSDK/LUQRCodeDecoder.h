@@ -1,1 +1,0 @@
-../../LevelUpSDK/Source/QRCode-Management/LUQRCodeDecoder.h

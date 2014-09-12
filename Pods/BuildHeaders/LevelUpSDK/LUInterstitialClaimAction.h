@@ -1,1 +1,0 @@
-../../LevelUpSDK/Source/API/Models/Interstitials/LUInterstitialClaimAction.h
